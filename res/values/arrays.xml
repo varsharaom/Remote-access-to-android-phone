@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+	<array name="entries">
+		<item>@drawable/help256256</item>		
+		<item>@drawable/register256</item> 		
+		<item>@drawable/settings256</item>		
+	  	<item>@drawable/addpeople256</item>
+	  	<item>@drawable/getloc</item>
+	  	<item>@drawable/notification</item>
+		<!--<item>@drawable/ic_launcher</item>		
+		<item>@drawable/ic_launcher</item>	-->					
+	</array>	
+	<array name="names">
+	    <item>HELP</item>
+	    <item>REGISTER</item>
+	    <item>SETTINGS</item>
+	    <item>ADD PEOPLE</item>
+	    <item>GET LOCATION</item>
+	    <item>NOTIFICATIONS</item>
+	  <!--   <item>The panda</item>
+	    <item>The rabbit</item> -->
+	</array>
+</resources>
+

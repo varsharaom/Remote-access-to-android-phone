@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.vvra.GetCurrentLocation" 
+    android:background="@drawable/getlocback">
+
+    <com.example.vvra.CustomTextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="70dp"
+        android:text="Latitude" 
+         android:textColor="#000"
+        android:textSize="25sp"
+        />
+
+    <com.example.vvra.CustomEditText
+        android:id="@+id/longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/latitude"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="31dp"
+        android:ems="10" />
+
+    <com.example.vvra.CustomEditText
+        android:id="@+id/latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:ems="10" />
+
+    <com.example.vvra.CustomTextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/latitude"
+        android:layout_marginTop="33dp"
+        android:text="Longitude"
+        android:textColor="#000"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/findLoc"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/longitude"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/ok256" />
+
+    <Button
+        android:id="@+id/button1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_marginBottom="22dp"
+        android:layout_toRightOf="@+id/latitude"
+        android:background="@drawable/info1" />
+
+</RelativeLayout>

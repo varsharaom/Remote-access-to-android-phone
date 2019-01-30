@@ -1,0 +1,99 @@
+<!--
+   Copyright 2013 Csaba Szugyiczki
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:circle="http://schemas.android.com/apk/res/com.example.vvra"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings" 
+    android:background="@drawable/settingback">
+
+    <com.example.vvra.CircleLayout
+        android:id="@+id/main_circle_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/main_selected_textView"
+        android:layout_gravity="center_horizontal"
+        circle:firstChildPosition="South" 
+        circle:rotateToCenter="true" 
+        circle:isRotating="true"
+        circle:speed="75" >       
+<!--         circle:circleBackground="@drawable/green"  > -->
+
+
+        <com.example.vvra.CircleImageView
+            android:id="@+id/block"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/block256"
+            circle:name="@string/block"
+             android:textColor="#000"
+        android:textSize="25sp" />
+
+        <com.example.vvra.CircleImageView
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/clear"
+            circle:name="@string/clear"
+             android:textColor="#000"
+        android:textSize="25sp" />
+
+        <com.example.vvra.CircleImageView
+            android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ttl256"
+            circle:name="@string/timer"
+             android:textColor="#000"
+        android:textSize="25sp" />
+
+        <com.example.vvra.CircleImageView
+            android:id="@+id/setTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/theme"
+            circle:name="@string/themes" />
+
+        <com.example.vvra.CircleImageView
+            android:id="@+id/changePassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/changepass256"
+            circle:name="@string/changePassword" />
+
+        <com.example.vvra.CircleImageView
+            android:id="@+id/forgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/forgetpass"
+            circle:name="@string/forgotPassword" />
+    </com.example.vvra.CircleLayout>
+
+    <com.example.vvra.CustomTextView
+        android:id="@+id/main_selected_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:textSize="30sp"
+        
+         android:textColor="#800000"
+       />
+
+</RelativeLayout>

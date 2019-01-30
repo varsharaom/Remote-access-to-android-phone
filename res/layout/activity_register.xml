@@ -1,0 +1,118 @@
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="fill_parent"
+
+    android:layout_height="wrap_content" >
+
+
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+   android:orientation="vertical"
+ 
+    android:background="@drawable/registerback" >
+
+    <com.example.vvra.CustomEditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       
+        android:layout_marginTop="85dp"
+        android:ems="10"
+        android:hint="Enter your name" />
+
+ <com.example.vvra.CustomTextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_below="@+id/editText1"
+        android:text="Password"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:textColor="#000"/>
+    <com.example.vvra.CustomEditText
+        android:id="@+id/password1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:ems="10" 
+        android:hint="Enter password">
+
+        
+    </com.example.vvra.CustomEditText>
+
+   <com.example.vvra.CustomTextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm password"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000" />
+
+    <com.example.vvra.CustomEditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_centerVertical="true"
+        android:ems="10" 
+        android:hint="re-enter password"/>
+
+    <com.example.vvra.CustomTextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText3"
+        android:layout_below="@+id/editText3"
+        android:text="Security question"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:textColor="#000"/>
+
+    <com.example.vvra.CustomEditText
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="14dp"
+        android:hint="Eg:favorite color"
+        
+        android:ems="10" />
+
+    <com.example.vvra.CustomTextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText4"
+        android:layout_below="@+id/editText4"
+        android:layout_marginTop="14dp"
+        android:text="Security answer"
+        android:textColor="#000"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <com.example.vvra.CustomEditText
+        android:id="@+id/editText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_below="@+id/textView4"
+         android:hint="Eg:red"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/button1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/editText5"
+        android:layout_toRightOf="@+id/editText5"
+        
+        android:background="@drawable/ok256"/>
+
+    
+
+</LinearLayout>
+</ScrollView>

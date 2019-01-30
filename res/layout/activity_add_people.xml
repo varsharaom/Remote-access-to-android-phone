@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  
+    tools:context=".AddPeople" 
+    android:background="@drawable/addpeopleback">
+
+    <Button
+        android:id="@+id/addNo"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="22dp"
+         android:background="@drawable/addnumber"
+        
+        android:textColor="#FFFFFF" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/addContact"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="48dp" 
+        android:layout_weight="1"
+        >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/addContact"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_above="@+id/addNo"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/addfromcontact"
+        
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/button1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/addNo"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/info1" />
+
+</RelativeLayout>

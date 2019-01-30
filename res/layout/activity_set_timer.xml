@@ -1,0 +1,53 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="fill_parent"
+
+    android:layout_height="wrap_content" >
+
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+   android:orientation="vertical"
+    android:background="@drawable/timerback">
+
+    <com.example.vvra.CustomTextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="131dp"
+        android:textSize="25sp"
+        android:textColor="#000"
+        android:text="Enter the time in hours(no of hours)" />
+
+    <com.example.vvra.CustomEditText
+        android:id="@+id/timeInHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/timeOK"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/timeInHours"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/ok256" />
+
+    <Button
+        android:id="@+id/button1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_marginBottom="74dp"
+        android:background="@drawable/info1" />
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Easy Access</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_splash_screen">Easy Access</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_help">Help</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_add_people">AddPeople</string>
+    <string name="changePassword">Change Password</string>
+    <string name="block">Block</string>
+    <string name="timer">Set Timer</string>
+    <string name="themes">Set Theme</string>
+    <string name="forgotPassword">Forgot Password</string>
+    <string name="clear">Clear Notification</string>
+    <string name="start_app">Starting application:</string>
+    <string name="center_click">Center has been clicked</string>
+    <string name="title_activity_change_password">ChangePassword</string>
+    <string name="title_activity_forgot_password">ForgotPassword</string>
+    <string name="title_activity_frgt_new_password">FrgtNewPassword</string>
+    <string name="title_activity_call_divert">CallDivert</string>
+    <string name="title_activity_add_new_number">AddNewNumber</string>
+    <string name="title_activity_helping">Helping</string>
+    <string name="title_activity_gpstracking">GPSTrackingActivity</string>
+    <string name="title_activity_block">Block</string>
+    <string name="title_activity_add_new_number_to_block">AddNewNumberToBlock</string>
+    <string name="title_activity_set_timer">SetTimer</string>
+    <string name="title_activity_get_current_location">GetCurrentLocation</string>
+    <string name="title_activity_notification">Notification</string>
+    <string name="title_activity_set_theme">SetTheme</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_fragment1">Fragment1</string>
+    <string name="title_activity_fragment2">Fragment2</string>
+    <string name="title_activity_fragment3">Fragment3</string>
+    <string name="title_activity_information">Information</string>
+
+</resources>

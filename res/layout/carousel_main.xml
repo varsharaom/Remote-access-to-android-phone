@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pj="http://schemas.android.com/apk/res/com.example.vvra"
+   
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="top"
+        android:padding="5dip"
+        android:background="@drawable/mainback3" 
+        android:id="@+id/lin1">
+
+ <!--    <TextView
+        android:id="@+id/selected_item"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.5"
+        android:background="#1E1921"
+        android:text="text"
+        android:textColor="#A85E4F"
+        android:textStyle="normal" /> --> 
+
+   <!-- <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+         android:layout_weight="0.5" 
+        android:gravity="top"
+        android:padding="5dip" >-->
+
+        <com.example.vvra.Carousel
+            android:id="@+id/carousel"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:animationDuration="200"
+            pj:Items="@array/entries"
+            pj:Names="@array/names"
+            pj:SelectedItem="0"
+            pj:UseReflection="true" />
+  <!--    </LinearLayout>-->
+
+</LinearLayout>

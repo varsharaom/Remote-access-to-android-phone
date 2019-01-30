@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<declare-styleable name="Carousel">
+		<attr name="android:gravity" />	
+		<attr name="android:animationDuration" />
+		<attr name="UseReflection" format="boolean"/>
+		<attr name="Items" format="integer"/>
+		<attr name="SelectedItem" format="integer"/>
+		<attr name="maxTheta" format="float"/>
+		<attr name="minQuantity" format="integer"/>
+		<attr name="maxQuantity" format="integer"/>
+		<attr name="Names" format="string" />
+	</declare-styleable>	
+	<declare-styleable name="Circle">
+        <attr name="circleBackground" format="integer" />
+        <attr name="firstChildPosition">
+            <enum name="East" value="0" />
+            <enum name="South" value="90" />
+            <enum name="West" value="180" />
+            <enum name="North" value="270" />
+        </attr>
+        <attr name="rotateToCenter" format="boolean" />
+        <attr name="isRotating" format="boolean" />
+        <attr name="speed" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr name="name" format="string" />
+    </declare-styleable>
+</resources>
